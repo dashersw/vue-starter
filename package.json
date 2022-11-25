@@ -1,0 +1,30 @@
+{
+  "name": "vue-starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest --environment jsdom --root src/",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "pinia": "^2.0.26",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.2.4",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsdom": "^20.0.3",
+    "prettier": "^2.7.1",
+    "sass": "^1.56.1",
+    "vite": "^3.2.4",
+    "vitest": "^0.25.3"
+  }
+}
