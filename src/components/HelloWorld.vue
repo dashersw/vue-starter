@@ -1,27 +1,27 @@
-<script>
-export default {
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
+<script setup>
+import { reactive } from "vue";
+
+defineProps({
+  msg: {
+    type: String,
+    required: true,
   },
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {
-    increment() {
-      this.count++;
-    },
-    decrement() {
-      this.count--;
-    },
-    reset() {
-      this.count = 0;
-    },
-  },
+});
+
+const state = reactive({
+  count: 0,
+});
+
+const increment = () => {
+  state.count++;
+};
+
+const decrement = () => {
+  state.count--;
+};
+
+const reset = () => {
+  state.count = 0;
 };
 </script>
 
@@ -34,7 +34,7 @@ export default {
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
     <p>Now, let’s see what you can do with it.</p>
-    <p>{{ count }}</p>
+    <p>{{ state.count }}</p>
     <p>
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
