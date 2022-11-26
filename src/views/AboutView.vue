@@ -12,13 +12,12 @@ export default {
 };
 </script>
 
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <p>{{ count }}</p>
-    <p>{{ doubleCount }}</p>
-    <button @click="increment">+</button>
-  </div>
+<template lang="pug">
+.about
+  h1 This is an about page
+  p {{ count }}
+  p {{ doubleCount }}
+  button(@click='increment') +
 </template>
 
 <style>

@@ -8,8 +8,7 @@ export default {
 };
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
+<template lang="pug">
+main
+  TheWelcome
 </template>
